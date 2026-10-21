@@ -1,0 +1,270 @@
+```html
+<!DOCTYPE html>
+<!-- Tecno Store Gomez - Productos -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Productos - Tecno Store Gomez</title>
+
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <!--[if IE]>
+        <link rel="stylesheet" href="css/ie.css"
+              type="text/css" charset="utf-8">
+    <![endif]-->
+
+    <style>
+        .productos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 22px;
+            margin-top: 25px;
+        }
+
+        .producto {
+            background: #ffffff;
+            border: 1px solid #dddddd;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .producto img {
+            width: 100%;
+            max-width: 200px;
+            height: 170px;
+            object-fit: contain;
+            margin-bottom: 12px;
+        }
+
+        .producto h3 {
+            color: #123c70;
+            margin: 10px 0;
+        }
+
+        .producto p {
+            line-height: 1.5;
+        }
+
+        .precio {
+            font-size: 20px;
+            font-weight: bold;
+            color: #087dce;
+        }
+
+        .boton {
+            display: inline-block;
+            background: #087dce;
+            color: #ffffff;
+            padding: 10px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 8px;
+        }
+
+        .boton:hover {
+            background: #075a96;
+        }
+
+        .aviso {
+            font-size: 13px;
+            color: #555555;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="page">
+
+        <!-- ENCABEZADO -->
+        <div id="header">
+
+            <a href="index.html" id="logo">
+                <img src="logo.JPG"
+                     alt="Tecno Store Gomez"
+                     style="width:80px; height:auto; vertical-align:middle;"
+                     onerror="this.style.display='none'">
+
+                <span style="font-size:18px; font-weight:bold;">
+                    Tecno Store Gomez
+                </span>
+            </a>
+
+            <ul id="navigation">
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+
+                <li>
+                    <a href="about.html">Nosotros</a>
+                </li>
+
+                <li class="selected">
+                    <a href="product.html">Productos</a>
+                </li>
+
+                <li>
+                    <a href="services.html">Servicios</a>
+                </li>
+
+                <li>
+                    <a href="solutions.html">Ofertas</a>
+                </li>
+
+                <li>
+                    <a href="news.html">Novedades</a>
+                </li>
+
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+
+                <li class="last-child">
+                    <a href="contact.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- CONTENIDO DE PRODUCTOS -->
+        <div id="contents">
+            <div class="background">
+
+                <h2>Nuestros productos</h2>
+
+                <p>
+                    Bienvenido a Tecno Store Gomez. Explora nuestra
+                    selección de productos y accesorios tecnológicos.
+                    Encuentra opciones para tus estudios, trabajo,
+                    entretenimiento y comunicación.
+                </p>
+
+                <h2>Celulares y accesorios</h2>
+
+                <div class="productos">
+
+                    <div class="producto">
+                        <img src="Celulares.PNG"
+                             alt="Teléfono celular"
+                             onerror="this.onerror=null;this.src='https://placehold.co/300x220/f0f4f8/123c70?text=Celular'">
+
+                        <h3>Teléfono celular</h3>
+
+                        <p>
+                            Dispositivos móviles para comunicarte,
+                            navegar y disfrutar de tus aplicaciones.
+                        </p>
+
+                        <p class="precio">Consultar precio</p>
+
+                        <a href="contact.html" class="boton">
+                            Consultar
+                        </a>
+                    </div>
+
+                    <div class="producto">
+                        <img src="Audifonos.PNG"
+                             alt="Audífonos"
+                             onerror="this.onerror=null;this.src='https://placehold.co/300x220/f0f4f8/123c70?text=Audifonos'">
+
+                        <h3>Audífonos</h3>
+
+                        <p>
+                            Disfruta de tu música, videos y llamadas
+                            con tus audífonos favoritos.
+                        </p>
+
+                        <p class="precio">Consultar precio</p>
+
+                        <a href="contact.html" class="boton">
+                            Consultar
+                        </a>
+                    </div>
+
+                    <div class="producto">
+                        <img src="Cargador.PNG"
+                             alt="Cargador para celular"
+                             onerror="this.onerror=null;this.src='https://placehold.co/300x220/f0f4f8/123c70?text=Cargador'">
+
+                        <h3>Cargadores</h3>
+
+                        <p>
+                            Accesorios de carga para mantener
+                            tus dispositivos con energía.
+                        </p>
+
+                        <p class="precio">Consultar precio</p>
+
+                        <a href="contact.html" class="boton">
+                            Consultar
+                        </a>
+                    </div>
+
+                </div>
+
+                <h2>Computadoras y periféricos</h2>
+
+                <div class="productos">
+
+                    <div class="producto">
+                        <img src="Laptop.jpg"
+                             alt="Computadora portátil"
+                             onerror="this.onerror=null;this.src='https://placehold.co/300x220/f0f4f8/123c70?text=Laptop'">
+
+                        <h3>Laptops</h3>
+
+                        <p>
+                            Computadoras portátiles para estudiar,
+                            trabajar y realizar tus proyectos.
+                        </p>
+
+                        <p class="precio">Consultar precio</p>
+
+                        <a href="contact.html" class="boton">
+                            Consultar
+                        </a>
+                    </div>
+
+                    <div class="producto">
+                        <img src="Teclado.JPG"
+                             alt="Teclado para computadora"
+                             onerror="this.onerror=null;this.src='https://placehold.co/300x220/f0f4f8/123c70?text=Teclado'">
+
+                        <h3>Teclados</h3>
+
+                        <p>
+                            Teclados para mejorar tu comodidad
+                            al escribir o jugar.
+                        </p>
+
+                        <p class="precio">Consultar precio</p>
+
+                        <a href="contact.html" class="boton">
+                            Consultar
+                        </a>
+                    </div>
+
+                    <div class="producto">
+                        <img src="Mouse.jpg"
+                             alt="Ratón para computadora"
+                             onerror="this.onerror=null;this.src='https://placehold.co/300x220/f0f4f8/123c70?text=Mouse'">
+
+                        <h3>Mouse</h3>
+
+                        <p>
+                            Ratones para computadoras portátiles
+                            y de escritorio.
+                        </p>
+
+                        <p class="precio">Consultar precio</p>
+
+                        <a href="contact.html" class="boton">
+                            Consultar
+                        </a>
+                    </div>
+
+                </div>
+
+                <h2>¿
