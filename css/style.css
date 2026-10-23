@@ -95,7 +95,7 @@ img {
 
 #navigation li a:hover,
 #navigation li.selected a {
-    background-color: #006b9b;
+    background-color: #ff0000;
     color: #ffffff;
 }
 
