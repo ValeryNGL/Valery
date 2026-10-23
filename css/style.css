@@ -96,7 +96,7 @@ img {
 #navigation li a:hover,
 #navigation li.selected a {
     background-color: #ff0000;
-    color: #ffffff;
+    color: #ff0000;
 }
 
 #navigation li:first-child a {
